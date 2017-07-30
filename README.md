@@ -8,6 +8,8 @@ Default method md5sum
 ```
 Examples
 ---
-*md5sum:* intcheck.sh testfile "1234567890abcdf1234567890abcdf12"
+```
+md5sum: intcheck.sh testfile "1234567890abcdf1234567890abcdf12"
 
-*sha256sum:* intcheck.sh -m sah256sum testfile "1234567890abcdf1234567890abcdf1234567890abcdf1234567890abcdf1234"
+sha256sum: intcheck.sh -m sha256sum testfile "1234567890abcdf1234567890abcdf1234567890abcdf1234567890abcdf1234"
+```
