@@ -5,13 +5,15 @@ A simple bash script to unify the way to check the integrity of files, given the
 ```
 Usage: intcheck.sh [-m method] filename hashvalue
 Default method md5sum
+
+Any valid *sum utility may be passed as -m argument value.
 ```
 Examples
 ---
 ```
 md5sum:
-intcheck.sh testfile "1234567890abcdf1234567890abcdf12"
+intcheck.sh testfile 1234567890abcdf1234567890abcdf12
 
 sha256sum:
-intcheck.sh -m sha256sum testfile "1234567890abcdf1234567890abcdf1234567890abcdf1234567890abcdf1234"
+intcheck.sh -m sha256sum testfile 1234567890abcdf1234567890abcdf1234567890abcdf1234567890abcdf1234
 ```
